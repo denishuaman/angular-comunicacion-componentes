@@ -1,4 +1,5 @@
-<h2>Comunicación entre componentes hermanos</h2>
-
-<app-hijo1-h (textoCambiado)="textoHijo1 = $event"></app-hijo1-h>
-<app-hijo2-h [textoHijo2]="textoHijo1"></app-hijo2-h>
+<div class="card">
+  <h2 class="card-header" align="center">Comunicación entre componentes hermanos</h2>
+  <app-hijo1-h (textoCambiado)="textoHijo1 = $event"></app-hijo1-h>
+  <app-hijo2-h [textoHijo2]="textoHijo1"></app-hijo2-h>
+</div>
