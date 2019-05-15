@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Componente hijo</h3>
+    <div class="form-group">
+      <input type="text" (input)="textoHijo2 = $event.target.value" class="form-control col-lg-12"
+        placeholder="Texto para enviar al componente padre">
+      <button (click)="botonClick()" class="col-lg-12 btn btn-primary">Enviar a componente padre</button>
+    </div>
+    <span>Texto ingresado en el componente padre que se muestra en el hijo: <b>{{ textoHijo }}</b></span>
+  </div>
+</div>
