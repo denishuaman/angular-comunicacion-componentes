@@ -1,3 +1,11 @@
-<h4>Componente hijo B</h4>
-<hr>
-<app-nieto-b-s></app-nieto-b-s>
+<div class="card">
+  <h4 class="card-header">Componente hijo B</h4>
+  <div class="card-body">
+    <div class="form-group">
+      <label>Esto es lo escrito en el textarea:</label>
+      <div style="white-space: pre-wrap;">{{ mensaje }}</div>
+      <button (click)="recibirCambios()" class="btn btn-success col-lg-12">Recibir cambios</button>
+    </div>
+    <app-nieto-b-s></app-nieto-b-s>
+  </div>
+</div>

@@ -1,6 +1,11 @@
-<h3>Componente padre</h3>
-<div style="display: flex; flex-direction: row; justify-content: space-evenly">
-<app-hijo-a-s></app-hijo-a-s>
-
-<app-hijo-b-s></app-hijo-b-s>
+<div class="card">
+  <h3 class="card-header">Componente padre</h3>
+  <div class="card-body">
+    <h4 class="card-title">Esto es lo escrito en los textarea:</h4>
+    <div style="white-space: pre-wrap;"><b>{{ comunicacionService.mensaje }}</b></div>
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly">
+      <app-hijo-a-s></app-hijo-a-s>
+      <app-hijo-b-s></app-hijo-b-s>
+    </div>
+  </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComunicacionService } from '../comunicacion.service';
 
 @Component({
   selector: 'app-hijo-b-s',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hijo-b-s.component.css']
 })
 export class HijoBSComponent implements OnInit {
+  mensaje: string;
 
-  constructor() { }
+  constructor(private comunicacionService: ComunicacionService) { }
 
   ngOnInit() {
   }
-
+  recibirCambios() {
+    this.mensaje = this.comunicacionService.mensaje;
+  }
 }

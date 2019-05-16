@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComunicacionService } from '../comunicacion.service';
 
 @Component({
   selector: 'app-padre-s',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PadreSComponent implements OnInit {
 
-  constructor() { }
+  constructor(public comunicacionService: ComunicacionService) { }
 
   ngOnInit() {
   }
